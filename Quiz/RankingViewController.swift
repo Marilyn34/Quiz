@@ -23,7 +23,7 @@ class RankingViewController: UIViewController {
     }
     
     @IBAction func onceMore() {
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 
     /*

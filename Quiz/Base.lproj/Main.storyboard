@@ -65,7 +65,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="click" destination="uaP-1A-NSe" eventType="touchUpInside" id="jnu-8D-ZtE"/>
+                                    <action selector="clickWithSender:" destination="uaP-1A-NSe" eventType="touchUpInside" id="7UR-HW-sXo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-g8-QRa">
@@ -76,7 +76,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="click" destination="uaP-1A-NSe" eventType="touchUpInside" id="eMS-NO-7o1"/>
+                                    <action selector="clickWithSender:" destination="uaP-1A-NSe" eventType="touchUpInside" id="tyM-pQ-6aB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSV-Oj-TCr">
@@ -87,10 +87,10 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="click" destination="uaP-1A-NSe" eventType="touchUpInside" id="ZZH-rY-kwA"/>
+                                    <action selector="clickWithSender:" destination="uaP-1A-NSe" eventType="touchUpInside" id="vpI-8i-SwG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-8w-uim">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-8w-uim">
                                 <rect key="frame" x="67" y="46" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,7 +137,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back" destination="owQ-HA-J3v" eventType="touchUpInside" id="F43-24-Khh"/>
-                                    <segue destination="uaP-1A-NSe" kind="presentation" id="UiU-VW-AtL"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hcz-Gf-7bF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yha-7M-ikz">
@@ -203,7 +203,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onceMore" destination="lro-Dd-lK1" eventType="touchUpInside" id="ptS-NT-Gtn"/>
-                                    <segue destination="uaP-1A-NSe" kind="presentation" id="Abk-1T-eu0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8Q1-ij-ek3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,7 +220,6 @@
         <image name="shinokin.jpg" width="959" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2jq-3M-qOr"/>
-        <segue reference="Abk-1T-eu0"/>
+        <segue reference="8Q1-ij-ek3"/>
     </inferredMetricsTieBreakers>
 </document>
