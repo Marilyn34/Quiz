@@ -11,6 +11,7 @@ import UIKit
 class RankingViewController: UIViewController, UITableViewDataSource {
     var currentScore: Int = 0
     var rankingArray = [String]()
+    var tmpArray = [String]()
     var saveData: UserDefaults = UserDefaults.standard
     @IBOutlet var table: UITableView!
     
@@ -18,7 +19,9 @@ class RankingViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        rankingArray = saveData.object(forKey: "ranking") as! [String]
+        if saveData != nil {
+            rankingArray = saveData.array(forKey: "ranking") as! [String]
+        }
         var currentData: String = "\(currentScore)問正解"
         rankingArray.append(currentData)
         // Do any additional setup after loading the view.

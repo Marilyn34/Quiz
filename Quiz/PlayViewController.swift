@@ -39,6 +39,11 @@ class PlayViewController: UIViewController {
       let tmpArray = mondaiArray[0] as! [Any]
         mondaiTextView.text = tmpArray[0] as! String
         
+//        let tmp2Array = [Any]()
+//        while tmpArray.count -1 > 0 {
+//            
+//        }
+        
         sentakushi1.setTitle(tmpArray[1] as? String, for: .normal)
         sentakushi2.setTitle(tmpArray[2] as? String, for: .normal)
         sentakushi3.setTitle(tmpArray[3] as? String, for: .normal)
