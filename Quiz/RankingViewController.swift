@@ -9,6 +9,7 @@
 import UIKit
 
 class RankingViewController: UIViewController {
+    var currentScore: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,9 @@ class RankingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onceMore() {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

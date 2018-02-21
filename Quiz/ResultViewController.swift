@@ -9,20 +9,39 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    var seikaiCount: Int = 0
+    
+    @IBOutlet var seikaiLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        seikaiLabel.text = String(seikaiCount)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     @IBAction func toRanking() {
         
+    }
+    
+    func performSegueToRanking() {
+        performSegue(withIdentifier: "toRanking", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toRanking" {
+            let rankingViewController = segue.destination as! RankingViewController
+            rankingViewController.currentScore = self.seikaiCount
+        }
+    }
+    
+    @IBAction func back() {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 
     /*
