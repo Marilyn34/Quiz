@@ -26,7 +26,7 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func toRanking() {
-        
+       performSegueToRanking()
     }
     
     func performSegueToRanking() {
