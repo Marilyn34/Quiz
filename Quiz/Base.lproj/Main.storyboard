@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-TN-1Hf">
-                                <rect key="frame" x="113" y="472" width="148" height="86"/>
+                                <rect key="frame" x="113" y="471" width="148" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.62828042024101305" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="START">
@@ -223,6 +223,6 @@
         <image name="shinokin.jpg" width="959" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8Q1-ij-ek3"/>
+        <segue reference="hcz-Gf-7bF"/>
     </inferredMetricsTieBreakers>
 </document>
