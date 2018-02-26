@@ -36,7 +36,7 @@ class ResultViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toRanking" {
-            let rankingViewController = segue.destination as! RankingViewController
+            let rankingViewController = segue.destination as! RankViewController
             rankingViewController.currentScore = self.seikaiCount
         }
     }

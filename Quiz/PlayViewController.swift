@@ -11,7 +11,6 @@ import UIKit
 class PlayViewController: UIViewController {
     var seikaiCount: Int = 0
     var mondaiArray = [[Any]]()
-//    let sentakushi: Int = 3
     @IBOutlet var mondaiTextView: UITextView!
     @IBOutlet var sentakushi1: UIButton!
     @IBOutlet var sentakushi2: UIButton!

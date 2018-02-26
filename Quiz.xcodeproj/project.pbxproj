@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E97E22BD2043D4E200DC357D /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E22BC2043D4E200DC357D /* RankViewController.swift */; };
 		E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80642038323500DDDC5B /* AppDelegate.swift */; };
 		E9BC80672038323500DDDC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80662038323500DDDC5B /* ViewController.swift */; };
 		E9BC806A2038323500DDDC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BC80682038323500DDDC5B /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		E9BC807A2038323600DDDC5B /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80792038323600DDDC5B /* QuizTests.swift */; };
 		E9BC80852038323600DDDC5B /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80842038323600DDDC5B /* QuizUITests.swift */; };
 		E9BC8095203834D200DDDC5B /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC8094203834D200DDDC5B /* PlayViewController.swift */; };
-		E9BC8097203834DE00DDDC5B /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC8096203834DE00DDDC5B /* RankingViewController.swift */; };
 		E9BC80992038376500DDDC5B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80982038376500DDDC5B /* ResultViewController.swift */; };
 		E9BC809B2038397700DDDC5B /* shinokin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9BC809A2038397600DDDC5B /* shinokin.jpg */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E97E22BC2043D4E200DC357D /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		E9BC80612038323500DDDC5B /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BC80642038323500DDDC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BC80662038323500DDDC5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		E9BC80842038323600DDDC5B /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		E9BC80862038323600DDDC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9BC8094203834D200DDDC5B /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
-		E9BC8096203834DE00DDDC5B /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		E9BC80982038376500DDDC5B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E9BC809A2038397600DDDC5B /* shinokin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shinokin.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,8 +113,8 @@
 				E9BC806D2038323500DDDC5B /* LaunchScreen.storyboard */,
 				E9BC80702038323500DDDC5B /* Info.plist */,
 				E9BC8094203834D200DDDC5B /* PlayViewController.swift */,
-				E9BC8096203834DE00DDDC5B /* RankingViewController.swift */,
 				E9BC80982038376500DDDC5B /* ResultViewController.swift */,
+				E97E22BC2043D4E200DC357D /* RankViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9BC8097203834DE00DDDC5B /* RankingViewController.swift in Sources */,
+				E97E22BD2043D4E200DC357D /* RankViewController.swift in Sources */,
 				E9BC8095203834D200DDDC5B /* PlayViewController.swift in Sources */,
 				E9BC80672038323500DDDC5B /* ViewController.swift in Sources */,
 				E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */,
