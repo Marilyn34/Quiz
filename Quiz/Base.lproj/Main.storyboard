@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1668" y="133.5832083958021"/>
         </scene>
-        <!--Rank View Controller-->
+        <!--Ranking View Controller-->
         <scene sceneID="S1C-A7-YEj">
             <objects>
-                <viewController id="lro-Dd-lK1" customClass="RankViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lro-Dd-lK1" customClass="RankingViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wRi-Rj-Uih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

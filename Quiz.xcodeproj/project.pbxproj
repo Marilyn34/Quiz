@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E97E22BD2043D4E200DC357D /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E22BC2043D4E200DC357D /* RankViewController.swift */; };
 		E97E22BF2043D79000DC357D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E22BE2043D78F00DC357D /* RankingViewController.swift */; };
 		E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80642038323500DDDC5B /* AppDelegate.swift */; };
 		E9BC80672038323500DDDC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80662038323500DDDC5B /* ViewController.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E97E22BC2043D4E200DC357D /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		E97E22BE2043D78F00DC357D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		E9BC80612038323500DDDC5B /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BC80642038323500DDDC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				E9BC80702038323500DDDC5B /* Info.plist */,
 				E9BC8094203834D200DDDC5B /* PlayViewController.swift */,
 				E9BC80982038376500DDDC5B /* ResultViewController.swift */,
-				E97E22BC2043D4E200DC357D /* RankViewController.swift */,
 				E97E22BE2043D78F00DC357D /* RankingViewController.swift */,
 			);
 			path = Quiz;
@@ -275,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97E22BD2043D4E200DC357D /* RankViewController.swift in Sources */,
 				E9BC8095203834D200DDDC5B /* PlayViewController.swift in Sources */,
 				E9BC80672038323500DDDC5B /* ViewController.swift in Sources */,
 				E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */,

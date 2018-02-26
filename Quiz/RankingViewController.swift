@@ -19,7 +19,7 @@ class RankingViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         
-        if saveData != nil {
+        if saveData.array(forKey: "rank") != nil {
             rankingArray = saveData.array(forKey: "rank") as! [Int]
         }
         rankingArray.append(currentScore)
@@ -46,7 +46,7 @@ class RankingViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        cell?.textLabel?.text = "\(rankingArray[indexPath.row]) + 問正解"
+        cell?.textLabel?.text = "\(rankingArray[indexPath.row])問正解"
         
         return cell!
     }
