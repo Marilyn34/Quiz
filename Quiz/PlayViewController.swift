@@ -11,7 +11,7 @@ import UIKit
 class PlayViewController: UIViewController {
     var seikaiCount: Int = 0
     var mondaiArray = [[Any]]()
-    let sentakushi: Int = 3
+//    let sentakushi: Int = 3
     @IBOutlet var mondaiTextView: UITextView!
     @IBOutlet var sentakushi1: UIButton!
     @IBOutlet var sentakushi2: UIButton!
@@ -38,9 +38,6 @@ class PlayViewController: UIViewController {
     func nextQuestion() {
       var currentMondaiArray = mondaiArray[0] as! [Any]
         mondaiTextView.text = currentMondaiArray[0] as! String
-//        答えの要素番号を別の変数に代入しておく
-//        配列を用意してtmpArray[1]~[3]までをバラバラの順番で入れる(arc4randomで要素番号持ってきてリムーブする)
-//        その時の乱数が答えの要素番号と等しければmondaiArray[0][4]をその要素番号に変更する
         let answer = currentMondaiArray[1]
         let wrong1 = currentMondaiArray[2]
         let wrong2 = currentMondaiArray[3]
@@ -59,24 +56,6 @@ class PlayViewController: UIViewController {
             tmpArray.remove(at: index)
         }
         
-        
-        
-        
-//        let seikai: Int = tmpArray[4] as! Int
-//        var tmp2Array = [Any]()
-//
-//        var i: Int = sentakushi
-//        while i > 0 {
-//            let index = Int(arc4random()) % i
-//            tmp2Array.append(tmpArray[index+1])
-//            if index+1 == seikai {
-//                mondaiArray[0][4] = tmp2Array.count
-//            }
-//            tmpArray.remove(at: index)
-//            i -= 1
-//
-//        }
-//
         sentakushi1.setTitle(sentakushiArray[0] as? String, for: .normal)
         sentakushi2.setTitle(sentakushiArray[1] as? String, for: .normal)
         sentakushi3.setTitle(sentakushiArray[2] as? String, for: .normal)
@@ -87,9 +66,10 @@ class PlayViewController: UIViewController {
     //    正解なら正解数増やす、間違いならそのまま
     //    2問目なら終了
     @IBAction func click(sender: UIButton) {
-        let tmpArray = mondaiArray[0] as! [Any]
+        let seikai = mondaiArray[0][1] as? String
+        let buttonTitle = sender.title(for: .normal)
         
-        if tmpArray[4] as! Int == sender.tag {
+        if buttonTitle == seikai {
             seikaiCount += 1
         }
         
