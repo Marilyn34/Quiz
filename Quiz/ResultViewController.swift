@@ -11,6 +11,7 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var seikaiCount: Int = 0
+    var mondaiCount: Int = 0
     
     @IBOutlet var seikaiLabel: UILabel!
 
@@ -18,7 +19,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        seikaiLabel.text = String(seikaiCount)
+        seikaiLabel.text = "\(mondaiCount)問中\(seikaiCount)問正解"
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,6 +16,7 @@ class PlayViewController: UIViewController {
     @IBOutlet var sentakushi1: UIButton!
     @IBOutlet var sentakushi2: UIButton!
     @IBOutlet var sentakushi3: UIButton!
+    var mondaiCount: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,12 @@ class PlayViewController: UIViewController {
         // Do any additional setup after loading the view.
         var tmpArray = [[Any]]()
         
-        tmpArray.append(["しのきんさんの学部は？","法学部","医学部","工学部",1])
-        tmpArray.append(["しのきんさんの大学は？","東京大学","慶應大学","一橋大学",1])
+        tmpArray.append(["しのきんさんの学部は？","法学部","医学部","工学部"])
+        tmpArray.append(["しのきんさんの大学は？","東京大学","慶應大学","一橋大学"])
+        tmpArray.append(["しのきんさんの担当コースは？","iPhone","Android","WebD"])
+        tmpArray.append(["しのきんさんの趣味は？","スニーカー集め","カラオケ","ゴルフ"])
+        
+        mondaiCount = tmpArray.count
         
         while tmpArray.count > 0 {
             let index = Int(arc4random()) % tmpArray.count
@@ -79,7 +84,7 @@ class PlayViewController: UIViewController {
         } else {
             nextQuestion()
         }
-        print("\(seikaiCount)問正解")
+        print("\(mondaiCount)問中\(seikaiCount)問正解")
     }
     
     func performSegueToResult() {
@@ -90,6 +95,7 @@ class PlayViewController: UIViewController {
         if segue.identifier == "toResultView" {
             let resultViewController = segue.destination as! ResultViewController
             resultViewController.seikaiCount = self.seikaiCount
+            resultViewController.mondaiCount = self.mondaiCount
         }
     }
 
