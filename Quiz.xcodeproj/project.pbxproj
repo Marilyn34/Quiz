@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92211A220469F4200F4FEC2 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92211A120469F4200F4FEC2 /* CreateViewController.swift */; };
 		E97E22BF2043D79000DC357D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E22BE2043D78F00DC357D /* RankingViewController.swift */; };
 		E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80642038323500DDDC5B /* AppDelegate.swift */; };
 		E9BC80672038323500DDDC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80662038323500DDDC5B /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E92211A120469F4200F4FEC2 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		E97E22BE2043D78F00DC357D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		E9BC80612038323500DDDC5B /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BC80642038323500DDDC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				E9BC8094203834D200DDDC5B /* PlayViewController.swift */,
 				E9BC80982038376500DDDC5B /* ResultViewController.swift */,
 				E97E22BE2043D78F00DC357D /* RankingViewController.swift */,
+				E92211A120469F4200F4FEC2 /* CreateViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				E9BC8095203834D200DDDC5B /* PlayViewController.swift in Sources */,
 				E9BC80672038323500DDDC5B /* ViewController.swift in Sources */,
+				E92211A220469F4200F4FEC2 /* CreateViewController.swift in Sources */,
 				E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */,
 				E9BC80992038376500DDDC5B /* ResultViewController.swift in Sources */,
 				E97E22BF2043D79000DC357D /* RankingViewController.swift in Sources */,

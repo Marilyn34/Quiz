@@ -9,6 +9,9 @@
 import UIKit
 
 class PlayViewController: UIViewController {
+    var time: Float = 5.0
+    var timer: Timer = Timer()
+    @IBOutlet var timeLabel: UILabel!
     var seikaiCount: Int = 0
     var mondaiArray = [[Any]]()
     @IBOutlet var mondaiTextView: UITextView!
@@ -40,7 +43,16 @@ class PlayViewController: UIViewController {
     }
     
     func nextQuestion() {
-      var currentMondaiArray = mondaiArray[0] as! [Any]
+        
+        if !timer.isValid {
+            time = 5.0
+            timer = Timer.scheduledTimer(timeInterval: 0.1,
+                                         target: self,
+                                         selector: #selector(self.down),
+                                         userInfo: nil,
+                                         repeats: true)
+        }
+        var currentMondaiArray = mondaiArray[0]
         mondaiTextView.text = currentMondaiArray[0] as! String
         let answer = currentMondaiArray[1]
         let wrong1 = currentMondaiArray[2]
@@ -67,23 +79,40 @@ class PlayViewController: UIViewController {
     }
     
     //    全部のボタン共通
-    //    正解なら正解数増やす、間違いならそのまま
-    //    2問目なら終了
     @IBAction func click(sender: UIButton) {
         let seikai = mondaiArray[0][1] as? String
         let buttonTitle = sender.title(for: .normal)
         
         if buttonTitle == seikai {
             seikaiCount += 1
+            if timer.isValid {
+                timer.invalidate()
+            }
+            toNext()
+        } else {
+            time -= 2.0
         }
-        
+    }
+    
+    func toNext() {
         mondaiArray.remove(at: 0)
         if mondaiArray.count == 0 {
             performSegueToResult()
         } else {
             nextQuestion()
         }
-        print("\(mondaiCount)問中\(seikaiCount)問正解")
+    }
+    
+    @objc func down() {
+        time -= 0.1
+        timeLabel.text = String(format: "%.2f", time)
+        if time < -0.01 {
+            if timer.isValid {
+                print("時間切れ")
+                timer.invalidate()
+            }
+            toNext()
+        }
     }
     
     func performSegueToResult() {
