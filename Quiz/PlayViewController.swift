@@ -12,13 +12,14 @@ class PlayViewController: UIViewController {
     var time: Float = 5.0
     var timer: Timer = Timer()
     @IBOutlet var timeLabel: UILabel!
-    var seikaiCount: Int = 0
+    
     var mondaiArray = [[Any]]()
     @IBOutlet var mondaiTextView: UITextView!
     @IBOutlet var sentakushi1: UIButton!
     @IBOutlet var sentakushi2: UIButton!
     @IBOutlet var sentakushi3: UIButton!
     var mondaiCount: Int = 0
+    var seikaiCount: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +27,10 @@ class PlayViewController: UIViewController {
         // Do any additional setup after loading the view.
         var tmpArray = [[Any]]()
         
-        tmpArray.append(["しのきんさんの学部は？","法学部","医学部","工学部"])
-        tmpArray.append(["しのきんさんの大学は？","東京大学","慶應大学","一橋大学"])
-        tmpArray.append(["しのきんさんの担当コースは？","iPhone","Android","WebD"])
-        tmpArray.append(["しのきんさんの趣味は？","スニーカー集め","カラオケ","ゴルフ"])
+        tmpArray.append(["しのきんさんの学部は？","法学部","医学部","工学部","marilyn"])
+        tmpArray.append(["しのきんさんの大学は？","東京大学","慶應大学","一橋大学","marilyn"])
+        tmpArray.append(["しのきんさんの担当コースは？","iPhone","Android","WebD","marilyn"])
+        tmpArray.append(["しのきんさんの趣味は？","スニーカー集め","カラオケ","ゴルフ","marilyn"])
         
         mondaiCount = tmpArray.count
         
