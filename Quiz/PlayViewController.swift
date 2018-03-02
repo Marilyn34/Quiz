@@ -20,6 +20,8 @@ class PlayViewController: UIViewController {
     @IBOutlet var sentakushi3: UIButton!
     var mondaiCount: Int = 0
     var seikaiCount: Int = 0
+    
+    let saveData: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,11 @@ class PlayViewController: UIViewController {
         tmpArray.append(["しのきんさんの大学は？","東京大学","慶應大学","一橋大学","marilyn"])
         tmpArray.append(["しのきんさんの担当コースは？","iPhone","Android","WebD","marilyn"])
         tmpArray.append(["しのきんさんの趣味は？","スニーカー集め","カラオケ","ゴルフ","marilyn"])
+        
+        if saveData.array(forKey: "rank") != nil {
+            tmpArray.append(saveData.array(forKey: "rank")!)
+            print(tmpArray)
+        }
         
         mondaiCount = tmpArray.count
         
