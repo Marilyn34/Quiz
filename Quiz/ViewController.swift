@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var startButton: UIButton!
+    @IBOutlet var createButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        startButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        createButton.layer.cornerRadius = 10.0 // 角丸のサイズ
     }
 
     override func didReceiveMemoryWarning() {

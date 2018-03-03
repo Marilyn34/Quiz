@@ -9,6 +9,7 @@
 import UIKit
 
 class RankingViewController: UIViewController, UITableViewDataSource {
+    @IBOutlet var button: UIButton!
     var currentScore: Int = 0
     var rankingArray = [Int]()
     var saveData: UserDefaults = UserDefaults.standard
@@ -18,6 +19,7 @@ class RankingViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button.layer.cornerRadius = 10.0 // 角丸のサイズ
         
         if saveData.array(forKey: "rank") != nil {
             rankingArray = saveData.array(forKey: "rank") as! [Int]

@@ -9,6 +9,8 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    @IBOutlet var toRankingButton: UIButton!
+    @IBOutlet var toPlayButton: UIButton!
     
     var seikaiCount: Int = 0
     var mondaiCount: Int = 0
@@ -17,6 +19,9 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        toRankingButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        toPlayButton.layer.cornerRadius = 10.0 // 角丸のサイズ
 
         // Do any additional setup after loading the view.
         seikaiLabel.text = "\(mondaiCount)問中\(seikaiCount)問正解"

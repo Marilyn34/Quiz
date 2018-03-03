@@ -25,6 +25,10 @@ class PlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sentakushi1.layer.cornerRadius = 10.0 // 角丸のサイズ
+        sentakushi2.layer.cornerRadius = 10.0 // 角丸のサイズ
+        sentakushi3.layer.cornerRadius = 10.0 // 角丸のサイズ
 
         // Do any additional setup after loading the view.
         var tmpArray = [[Any]]()
@@ -114,7 +118,7 @@ class PlayViewController: UIViewController {
     @objc func down() {
         time -= 0.1
         timeLabel.text = String(format: "%.2f", time)
-        if time < -0.01 {
+        if time < 0.0 {
             if timer.isValid {
                 print("時間切れ")
                 timer.invalidate()
@@ -133,6 +137,10 @@ class PlayViewController: UIViewController {
             resultViewController.seikaiCount = self.seikaiCount
             resultViewController.mondaiCount = self.mondaiCount
         }
+    }
+    
+    @IBAction func back() {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

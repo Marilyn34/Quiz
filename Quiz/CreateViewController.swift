@@ -9,6 +9,7 @@
 import UIKit
 
 class CreateViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var button: UIButton!
     @IBOutlet var mondaiTF: UITextField!
     @IBOutlet var seikaiTF: UITextField!
     @IBOutlet var dammy1TF: UITextField!
@@ -21,6 +22,7 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        button.layer.cornerRadius = 10.0 // 角丸のサイズ
 
         // Do any additional setup after loading the view.
         mondaiTF.delegate = self
