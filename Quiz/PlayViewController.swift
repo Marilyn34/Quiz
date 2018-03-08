@@ -18,6 +18,7 @@ class PlayViewController: UIViewController {
     @IBOutlet var sentakushi1: UIButton!
     @IBOutlet var sentakushi2: UIButton!
     @IBOutlet var sentakushi3: UIButton!
+    @IBOutlet var sakushaLabel: UILabel!
     var mondaiCount: Int = 0
     var seikaiCount: Int = 0
     
@@ -38,8 +39,8 @@ class PlayViewController: UIViewController {
         tmpArray.append(["しのきんさんの担当コースは？","iPhone","Android","WebD","marilyn"])
         tmpArray.append(["しのきんさんの趣味は？","スニーカー集め","カラオケ","ゴルフ","marilyn"])
         
-        if saveData.array(forKey: "rank") != nil {
-            tmpArray.append(saveData.array(forKey: "rank")!)
+        if saveData.array(forKey: "new") != nil {
+            tmpArray.append(saveData.array(forKey: "new")!)
             print(tmpArray)
         }
         
@@ -83,6 +84,8 @@ class PlayViewController: UIViewController {
             sentakushiArray.append(tmpArray[index])
             tmpArray.remove(at: index)
         }
+        
+        sakushaLabel.text = currentMondaiArray[4] as! String
         
         sentakushi1.setTitle(sentakushiArray[0] as? String, for: .normal)
         sentakushi2.setTitle(sentakushiArray[1] as? String, for: .normal)
@@ -141,6 +144,9 @@ class PlayViewController: UIViewController {
     
     @IBAction func back() {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
+        if timer.isValid {
+            timer.invalidate()
+        }
     }
 
     override func didReceiveMemoryWarning() {

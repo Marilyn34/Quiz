@@ -11,6 +11,9 @@
 		E92211A52049CA0F00F4FEC2 /* rip.png in Resources */ = {isa = PBXBuildFile; fileRef = E92211A42049CA0F00F4FEC2 /* rip.png */; };
 		E92211A72049CC6F00F4FEC2 /* fukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = E92211A62049CC6E00F4FEC2 /* fukidashi.png */; };
 		E92211AD2049DA5300F4FEC2 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E92211AC2049DA5300F4FEC2 /* back.png */; };
+		E92211AF204AF5C100F4FEC2 /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = E92211AE204AF5C000F4FEC2 /* batsu.png */; };
+		E92211B1204BF86200F4FEC2 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E92211B0204BF86200F4FEC2 /* launch.png */; };
+		E92211B3204C1E9100F4FEC2 /* marilyn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E92211B2204C1E9100F4FEC2 /* marilyn.jpg */; };
 		E97E22BF2043D79000DC357D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E22BE2043D78F00DC357D /* RankingViewController.swift */; };
 		E9BC80652038323500DDDC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80642038323500DDDC5B /* AppDelegate.swift */; };
 		E9BC80672038323500DDDC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC80662038323500DDDC5B /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 		E92211A42049CA0F00F4FEC2 /* rip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rip.png; sourceTree = "<group>"; };
 		E92211A62049CC6E00F4FEC2 /* fukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fukidashi.png; sourceTree = "<group>"; };
 		E92211AC2049DA5300F4FEC2 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E92211AE204AF5C000F4FEC2 /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = batsu.png; path = ../../../../../Downloads/batsu.png; sourceTree = "<group>"; };
+		E92211B0204BF86200F4FEC2 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		E92211B2204C1E9100F4FEC2 /* marilyn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marilyn.jpg; sourceTree = "<group>"; };
 		E97E22BE2043D78F00DC357D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		E9BC80612038323500DDDC5B /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BC80642038323500DDDC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +99,10 @@
 		E92211A32049C9ED00F4FEC2 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				E92211B2204C1E9100F4FEC2 /* marilyn.jpg */,
+				E92211B0204BF86200F4FEC2 /* launch.png */,
 				E92211AC2049DA5300F4FEC2 /* back.png */,
+				E92211AE204AF5C000F4FEC2 /* batsu.png */,
 				E92211A62049CC6E00F4FEC2 /* fukidashi.png */,
 				E92211A42049CA0F00F4FEC2 /* rip.png */,
 				E9BC809A2038397600DDDC5B /* shinokin.jpg */,
@@ -225,7 +234,7 @@
 				TargetAttributes = {
 					E9BC80602038323500DDDC5B = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E9BC80742038323500DDDC5B = {
 						CreatedOnToolsVersion = 9.2;
@@ -267,7 +276,10 @@
 				E92211A72049CC6F00F4FEC2 /* fukidashi.png in Resources */,
 				E9BC806F2038323500DDDC5B /* LaunchScreen.storyboard in Resources */,
 				E9BC806C2038323500DDDC5B /* Assets.xcassets in Resources */,
+				E92211B1204BF86200F4FEC2 /* launch.png in Resources */,
+				E92211B3204C1E9100F4FEC2 /* marilyn.jpg in Resources */,
 				E9BC809B2038397700DDDC5B /* shinokin.jpg in Resources */,
+				E92211AF204AF5C100F4FEC2 /* batsu.png in Resources */,
 				E92211AD2049DA5300F4FEC2 /* back.png in Resources */,
 				E92211A52049CA0F00F4FEC2 /* rip.png in Resources */,
 				E9BC806A2038323500DDDC5B /* Main.storyboard in Resources */,
@@ -466,11 +478,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -480,11 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

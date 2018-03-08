@@ -44,6 +44,7 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submit() {
         createMondai()
         saveData.set(createdMondai, forKey: "new")
+        print("\(saveData)")
         let alert: UIAlertController = UIAlertController(title: "保存", message: "クイズの保存が完了しました。",
                                                          preferredStyle: .alert)
         
